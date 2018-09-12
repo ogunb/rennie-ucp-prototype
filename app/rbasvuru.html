@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R Panel | $Karakter_Adı</title>
+  <!--BURAYA GİRİŞ YAPMIŞ/SEÇİLMİŞ KARKATERİN ADI EKLECEK-->
+  <link rel="favicon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">Eski bir browser kullanıyorsunuz. Siteyi en iyi şekilde tecrübe etmek için lütfen Google Chrome ya da Mozilla Firefox'un son sürümünü kullanın.</p>
+    <![endif]-->
+  <div class="wrap">
+    <header class="topBar">
+      <div class="container">
+        <div class="row topBarKarakter">
+          <div class="col-sm-2">
+            <a href="giris-index.html">
+              <h1 class="R-logo">R</h1>
+            </a>
+          </div>
+          <div class="col-sm-1">
+            <img class="karaktersizSkin" src="images/skins/Skin_0.png">
+          </div>
+          <div class="col-sm-6 topBarPadding">
+            <p class="white">Hoşgeldin, Hesap_Adı! Henüz bir karakterin bulunmuyor. Karakter başvursu göndermek için
+              sağdaki <a href="#başvuru" class="pink">“Karakter Oluştur”</a> butonuna tıkla ya da ayrıntılı bilgi için
+              <a href="#forum-konu-linki" class="pink">forum sitemizi ziyaret et.</a></p>
+          </div>
+          <div class="col-sm-3">
+            <a href="karakterlerim.html"><button type="button" class="btn rBtn RennieButton">Karakter Değiştir</button></a><br>
+            <a href="index.html"><button type="button" class="btn rBtn RennieButton">Çıkış</button></a>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="nav nav-pills rNavigasyon">
+            <li class="active"><a href="index.html">Anasayfa</a></li>
+            <li><a href="karakter.html">Karakter</a></li>
+            <li><a href="olusum.html">Oluşum</a></li>
+            <li><a href="banka.html">Banka</a></li>
+            <li><a href="#">Bahis</a></li>
+            <!--ŞİMDİLİK İÇİ BOŞ, KONUŞLACAK, HİLE OLMAMASI LAZIM-->
+            <li><a href="#">Premium</a></li>
+            <!--ŞİMDİLİK İÇİ BOŞ, KONUŞULACAK-->
+            <li><a href="bildirimlerim.html">Destek</a></li>
+            <li><a href="gelistirici.html">Geliştirici</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+            <!--SADECE YÖNETİM-->
+
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row row-eq-height">
+          <div class="col-sm-3 basvuruGrayBox">
+            <div>
+              <h3 class="main-color"><strong>Karakter Başvurusu</strong></h3>
+              <label for="form-control">Karakter Adı(Ad_Soyad):</label>
+              <input type="text" class="form-control bilTextArea" placeholder="Örn: Federico_Marcelo">
+              <label for="form-control">Doğum Yılı:</label>
+              <input type="text" class="form-control bilTextArea" placeholder="1957">
+              <label for="form-control">Cinsiyet</label>
+              <select class="form-control bilTextArea">
+                <option>Erkek</option>
+                <option>Kadın</option>
+              </select>
+              <label for="form-control">Etnik</label>
+              <select class="form-control bilTextArea">
+                <option>Beyaz</option>
+                <option>Siyahi</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-9 basvuru">
+            <label for="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+            <textarea class="form-control bilTextArea" rows="7"></textarea>
+            <label for="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+            <textarea class="form-control bilTextArea" rows="7"></textarea>
+            <label for="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+            <textarea class="form-control bilTextArea" rows="7"></textarea>
+            <label for="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+            <textarea class="form-control bilTextArea" rows="7"></textarea>
+            <button type="button" class="btn basvuruBtn rBtn RennieButton push-6">Gönder</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="gaminglogo">R</h1>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="takiple">BİZİ TAKİP EDİN!</h3>
+          <div class="inline">
+            <a href="#" class="facebook">f</a>
+            <a href="#" class="twitter">t</a>
+            <a href="#" class="youtube">y</a>
+          </div>
+          <a href="mailto:info@rennierpg.com">info@rennierpg.com</a>
+        </div>
+        <div class="col-sm-3 col-padding">
+          <h5 class="yesil">Site Navigasyonu</h5>
+          <ul class="footerListe">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Panel</a></li>
+            <li><a href="#">Geliştirici Notları</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-padding">
+          <h5 class="yesil">Kullanım ve Kurallar</h5>
+          <ul class="footerListe">
+            <li><a href="#">Biz Kimiz?</a></li>
+            <li><a href="#">Oyun Kuralları</a></li>
+            <li><a href="#">Forum Kuralları</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+          </ul>
+          <p class="white copyright textRight">© 2017 rennie gaming<br>
+            Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

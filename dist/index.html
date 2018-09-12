@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>R Panel | $Karakter_Adı</title>
+  <!--BURAYA GİRİŞ YAPMIŞ/SEÇİLMİŞ KARKATERİN ADI EKLECEK-->
+  <link rel="favicon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="scripts/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">Eski bir browser kullanıyorsunuz. Siteyi en iyi şekilde tecrübe etmek için lütfen Google Chrome ya da Mozilla Firefox'un son sürümünü kullanın.</p>
+    <![endif]-->
+  <header class="topBar">
+    <div class="container">
+      <div class="row topBarKarakter">
+        <div class="col-sm-1">
+          <a href="giris-index.html">
+            <h1 class="R-logo">R</h1>
+          </a>
+        </div>
+        <div class="topBarPadding">
+          <div class="col-sm-3">
+            <input type="text" class="form-control TopGiris" placeholder="Kullanıcı adı">
+          </div>
+          <div class="col-sm-3">
+            <input type="password" class="form-control TopGiris" placeholder="Şifre">
+          </div>
+          <div class="checkbox col-sm-1">
+            <label>
+              <input class="rCheckbox" type="checkbox" value="">
+              <span class="gray">Beni hatırla</span>
+            </label>
+          </div>
+          <div class="col-sm-2 textCenter">
+            <a href="giris-index.html"> <button type="button" class="btn btn-default RennieButton">Giriş</button></a>
+            <a href="#şifremiunuttum">
+              <p>Şifremi unuttum!</p>
+            </a>
+          </div>
+          <div class="col-sm-2 textCenter">
+            <button type="button" class="btn btn-default RennieButtonÜye" data-toggle="modal" data-target="#uye-ol">Üye
+              ol</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="nav nav-pills rNavigasyon">
+          <li class="active"><a href="index.html">Anasayfa</a></li>
+          <li><a href="karakter.html">Karakter</a></li>
+          <li><a href="olusum.html">Oluşum</a></li>
+          <li><a href="banka.html">Banka</a></li>
+          <li><a href="#">Bahis</a></li>
+          <!--ŞİMDİLİK İÇİ BOŞ, KONUŞLACAK, HİLE OLMAMASI LAZIM-->
+          <li><a href="#">Premium</a></li>
+          <!--ŞİMDİLİK İÇİ BOŞ, KONUŞULACAK-->
+          <li><a href="bildirimlerim.html">Destek</a></li>
+          <li><a href="gelistirici.html">Geliştirici</a></li>
+          <li><a href="yonetim.html">Yönetim</a></li>
+          <!--SADECE YÖNETİM-->
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal fade" id="uye-ol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="yesil" id="exampleModalLabel">Bir hesap yaratın.</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Kullanıcı Adı</label>
+              <input type="text" class="form-control bilTextArea" id="recipient-name" placeholder="Kullanıcı Adı">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">E-mail</label>
+              <input type="text" class="form-control bilTextArea" id="recipient-name" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Şifre</label>
+              <input type="password" class="form-control bilTextArea" id="recipient-name" placeholder="Şifre">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Şifre tekrar</label>
+              <input type="password" class="form-control bilTextArea" id="recipient-name" placeholder="Şifre">
+            </div>
+            <label>
+              <input class="rCheckbox" type="checkbox" value="">
+              <span class="gray">Kullanım koşullarını okudum ve kabul ediyorum.</span>
+            </label>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default RennieButton">Kayıt ol</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article>
+    <div class="divshadow container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="contenthead">gelişmeler</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1">
+          <a href="#" class="yesil">
+            <div class="glyphicon glyphicon-chevron-left glyphPadding"></div>
+          </a>
+        </div>
+        <div class="col-sm-10">
+          <img src="http://fillmurray.com/850/150" class="img-responsive imgPadding">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.-- <a href="#" class="pink">Devam etmek için tıklayın.</a></p>
+        </div>
+        <div class="col-sm-1">
+          <a href="#" class="yesil">
+            <div class="glyphicon glyphicon-chevron-right glyphPadding"></div>
+          </a>
+        </div>
+        <div class="row glyphResponsive">
+          <a class="glyphicon glyphicon-chevron-left"></a>
+          <a class="glyphicon glyphicon-chevron-right"></a>
+        </div>
+      </div>
+    </div>
+    <div class="container divshadow">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="contenthead">geliştirici notları</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.</p>
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Nulla accumsan neque sit amet dolor eleifend, vitae lacinia diam</li>
+            <li>Maecenas fringilla arcu rutrum, feugiat turpis vitae, egestas velit.</li>
+            <li>Maecenas fringilla arcu rutrum, feugiat turpis vitae, egestas velit.</li>
+            <li>Te labore maiestatis cum, novum putent accommodare qui cu</li>
+          </ol>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="gaminglogo">R</h1>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="takiple">BİZİ TAKİP EDİN!</h3>
+          <div class="inline">
+            <a href="#" class="facebook">f</a>
+            <a href="#" class="twitter">t</a>
+            <a href="#" class="youtube">y</a>
+          </div>
+          <a href="mailto:info@rennierpg.com">info@rennierpg.com</a>
+        </div>
+        <div class="col-sm-3 col-padding">
+          <h5 class="yesil">Site Navigasyonu</h5>
+          <ul class="footerListe">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Panel</a></li>
+            <li><a href="#">Geliştirici Notları</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-padding">
+          <h5 class="yesil">Kullanım ve Kurallar</h5>
+          <ul class="footerListe">
+            <li><a href="#">Biz Kimiz?</a></li>
+            <li><a href="#">Oyun Kuralları</a></li>
+            <li><a href="#">Forum Kuralları</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+          </ul>
+          <p class="white copyright textRight">© 2017 rennie gaming<br>
+            Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/vendor.js"></script>
+
+  <script src="scripts/plugins.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

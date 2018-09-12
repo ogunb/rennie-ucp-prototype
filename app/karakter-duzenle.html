@@ -1,0 +1,503 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R Panel | $Karakter_Adı</title>
+  <!--BURAYA GİRİŞ YAPMIŞ/SEÇİLMİŞ KARKATERİN ADI EKLECEK-->
+  <link rel="favicon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">Eski bir browser kullanıyorsunuz. Siteyi en iyi şekilde tecrübe etmek için lütfen Google Chrome ya da Mozilla Firefox'un son sürümünü kullanın.</p>
+    <![endif]-->
+  <header class="topBar">
+    <div class="container">
+      <div class="row topBarKarakter">
+        <div class="col-sm-2">
+          <a href="giris-index.html">
+            <h1 class="R-logo">R</h1>
+          </a>
+        </div>
+        <div class="col-sm-1">
+          <img src="images/skins/Skin_291.png">
+        </div>
+        <div class="col-sm-3 topBarPadding">
+          <p class="white">Karakter Adı: <span class="gray">Karakter_Adı</span></p>
+          <p class="white">Seviye: <span class="gray">Seviye-Puan/GerekliPuan</span></p>
+        </div>
+        <div class="col-sm-3 topBarPadding">
+          <p class="white">Para: <span class="gray">$Cepteki_Para</span></p>
+          <p class="white">Banka: <span class="gray">$Bankadaki_Para</span></p>
+        </div>
+        <div class="col-sm-3">
+          <a href="karakterlerim.html"><button type="button" class="btn rBtn RennieButton">Karakter Değiştir</button></a><br>
+          <a href="index.html"><button type="button" class="btn rBtn RennieButton">Çıkış</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="nav nav-pills rNavigasyon">
+          <li><a href="giris-index.html">Anasayfa</a></li>
+          <li class="active"><a href="karakter.html">Karakter</a></li>
+          <li><a href="olusum.html">Oluşum</a></li>
+          <li><a href="banka.html">Banka</a></li>
+          <li><a href="#">Bahis</a></li>
+          <!--ŞİMDİLİK İÇİ BOŞ, KONUŞLACAK, HİLE OLMAMASI LAZIM-->
+          <li><a href="#">Premium</a></li>
+          <!--ŞİMDİLİK İÇİ BOŞ, KONUŞULACAK-->
+          <li><a href="bildirimlerim.html">Destek</a></li>
+          <li><a href="gelistirici.html">Geliştirici</a></li>
+          <li><a href="yonetim.html">Yönetim</a></li>
+          <!--SADECE YÖNETİM-->
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal fade" id="karakteriSil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content karakteriSil">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="yesil uppercase" id="exampleModalLabel"><strong>Karakter Silinsin Mi?</strong></h4>
+        </div>
+        <div class="modal-body">
+          <p>Bu işlemin geri dönüşü yoktur. <span class="underline">Aynı isim ile farklı bir karakter yaratamazsınız.</span>
+            <span class="gray">Buna rağmen karakteri silmek istediğinize emin misiniz?</span></p>
+        </div>
+        <div class="modal-footer karakteriSilFooter">
+          <button type="button" class="btn RennieButton">Evet, sil.</button>
+          <button type="button" class="btn RennieButton">Hayır, silme.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container row-eq-height">
+      <span class="glyphicon glyphicon-option-horizontal nav-toggle" aria-hidden="true"></span>
+      <div class="col-sm-2 rLefty">
+        <ul class="left-nav">
+          <li><a href="karakter.html">Ayrıntılar</a></li>
+          <li><a class="iMain" href="karakter-duzenle.html">Düzenle</a></li>
+          <li><a href="bildirimlerim.html">Destek</a></li>
+          <li><a href="bildirim-gonder.html">Bug Bildirimi</a></li>
+          <li><a href="bildirim-gonder.html">Geri Bildirim</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#karakteriSil"><span class="pink">Karkateri Sil</span></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9 kapansusam karakterduzenle">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-2">
+            <img src="images/skins/Skin_0.png" class="imgMargin">
+            <span><strong>Şu anki Skin ID:</strong> skin_id</span>
+          </div>
+          <div class="col-sm-4 yeniSkin">
+            <label for="yeniSkin">Yeni Skin ID:</label>
+            <input type="text" class="yeniSkin form-control bilTextArea" placeholder="örn:291">
+            <p class="lighter">*skin id yazarak skin'inizi değiştirebilir ya da aşağıdan bir skin seçebilirsiniz.</p>
+          </div>
+        </div>
+        <div class="row divshadow">
+          <img src="images/skins/Skin_1.png">
+          <img src="images/skins/Skin_2.png">
+          <img src="images/skins/Skin_3.png">
+          <img src="images/skins/Skin_4.png">
+          <img src="images/skins/Skin_5.png">
+          <img src="images/skins/Skin_6.png">
+          <img src="images/skins/Skin_7.png">
+          <img src="images/skins/Skin_8.png">
+          <img src="images/skins/Skin_9.png">
+          <img src="images/skins/Skin_10.png">
+          <img src="images/skins/Skin_11.png">
+          <img src="images/skins/Skin_12.png">
+          <img src="images/skins/Skin_13.png">
+          <img src="images/skins/Skin_14.png">
+          <img src="images/skins/Skin_15.png">
+          <img src="images/skins/Skin_16.png">
+          <img src="images/skins/Skin_17.png">
+          <img src="images/skins/Skin_18.png">
+          <img src="images/skins/Skin_19.png">
+          <img src="images/skins/Skin_20.png">
+          <img src="images/skins/Skin_21.png">
+          <img src="images/skins/Skin_22.png">
+          <img src="images/skins/Skin_23.png">
+          <img src="images/skins/Skin_24.png">
+          <img src="images/skins/Skin_25.png">
+          <img src="images/skins/Skin_26.png">
+          <img src="images/skins/Skin_27.png">
+          <img src="images/skins/Skin_28.png">
+          <img src="images/skins/Skin_29.png">
+          <img src="images/skins/Skin_30.png">
+          <img src="images/skins/Skin_31.png">
+          <img src="images/skins/Skin_32.png">
+          <img src="images/skins/Skin_33.png">
+          <img src="images/skins/Skin_34.png">
+          <img src="images/skins/Skin_35.png">
+          <img src="images/skins/Skin_36.png">
+          <img src="images/skins/Skin_37.png">
+          <img src="images/skins/Skin_38.png">
+          <img src="images/skins/Skin_39.png">
+          <img src="images/skins/Skin_40.png">
+          <img src="images/skins/Skin_41.png">
+          <img src="images/skins/Skin_42.png">
+          <img src="images/skins/Skin_43.png">
+          <img src="images/skins/Skin_44.png">
+          <img src="images/skins/Skin_45.png">
+          <img src="images/skins/Skin_46.png">
+          <img src="images/skins/Skin_47.png">
+          <img src="images/skins/Skin_48.png">
+          <img src="images/skins/Skin_50.png">
+          <img src="images/skins/Skin_51.png">
+          <img src="images/skins/Skin_52.png">
+          <img src="images/skins/Skin_53.png">
+          <img src="images/skins/Skin_54.png">
+          <img src="images/skins/Skin_55.png">
+          <img src="images/skins/Skin_56.png">
+          <img src="images/skins/Skin_57.png">
+          <img src="images/skins/Skin_58.png">
+          <img src="images/skins/Skin_59.png">
+          <img src="images/skins/Skin_60.png">
+          <img src="images/skins/Skin_61.png">
+          <img src="images/skins/Skin_62.png">
+          <img src="images/skins/Skin_63.png">
+          <img src="images/skins/Skin_64.png">
+          <img src="images/skins/Skin_65.png">
+          <img src="images/skins/Skin_66.png">
+          <img src="images/skins/Skin_67.png">
+          <img src="images/skins/Skin_68.png">
+          <img src="images/skins/Skin_69.png">
+          <img src="images/skins/Skin_70.png">
+          <img src="images/skins/Skin_71.png">
+          <img src="images/skins/Skin_72.png">
+          <img src="images/skins/Skin_73.png">
+          <img src="images/skins/Skin_75.png">
+          <img src="images/skins/Skin_76.png">
+          <img src="images/skins/Skin_77.png">
+          <img src="images/skins/Skin_78.png">
+          <img src="images/skins/Skin_79.png">
+          <img src="images/skins/Skin_80.png">
+          <img src="images/skins/Skin_81.png">
+          <img src="images/skins/Skin_82.png">
+          <img src="images/skins/Skin_83.png">
+          <img src="images/skins/Skin_84.png">
+          <img src="images/skins/Skin_85.png">
+          <img src="images/skins/Skin_86.png">
+          <img src="images/skins/Skin_87.png">
+          <img src="images/skins/Skin_88.png">
+          <img src="images/skins/Skin_89.png">
+          <img src="images/skins/Skin_90.png">
+          <img src="images/skins/Skin_91.png">
+          <img src="images/skins/Skin_92.png">
+          <img src="images/skins/Skin_93.png">
+          <img src="images/skins/Skin_94.png">
+          <img src="images/skins/Skin_95.png">
+          <img src="images/skins/Skin_96.png">
+          <img src="images/skins/Skin_97.png">
+          <img src="images/skins/Skin_98.png">
+          <img src="images/skins/Skin_99.png">
+          <img src="images/skins/Skin_100.png">
+          <img src="images/skins/Skin_101.png">
+          <img src="images/skins/Skin_102.png">
+          <img src="images/skins/Skin_103.png">
+          <img src="images/skins/Skin_104.png">
+          <img src="images/skins/Skin_105.png">
+          <img src="images/skins/Skin_106.png">
+          <img src="images/skins/Skin_107.png">
+          <img src="images/skins/Skin_108.png">
+          <img src="images/skins/Skin_109.png">
+          <img src="images/skins/Skin_110.png">
+          <img src="images/skins/Skin_111.png">
+          <img src="images/skins/Skin_112.png">
+          <img src="images/skins/Skin_113.png">
+          <img src="images/skins/Skin_114.png">
+          <img src="images/skins/Skin_115.png">
+          <img src="images/skins/Skin_116.png">
+          <img src="images/skins/Skin_117.png">
+          <img src="images/skins/Skin_118.png">
+          <img src="images/skins/Skin_119.png">
+          <img src="images/skins/Skin_120.png">
+          <img src="images/skins/Skin_121.png">
+          <img src="images/skins/Skin_122.png">
+          <img src="images/skins/Skin_123.png">
+          <img src="images/skins/Skin_124.png">
+          <img src="images/skins/Skin_125.png">
+          <img src="images/skins/Skin_126.png">
+          <img src="images/skins/Skin_127.png">
+          <img src="images/skins/Skin_128.png">
+          <img src="images/skins/Skin_129.png">
+          <img src="images/skins/Skin_130.png">
+          <img src="images/skins/Skin_131.png">
+          <img src="images/skins/Skin_132.png">
+          <img src="images/skins/Skin_133.png">
+          <img src="images/skins/Skin_134.png">
+          <img src="images/skins/Skin_135.png">
+          <img src="images/skins/Skin_136.png">
+          <img src="images/skins/Skin_137.png">
+          <img src="images/skins/Skin_138.png">
+          <img src="images/skins/Skin_139.png">
+          <img src="images/skins/Skin_140.png">
+          <img src="images/skins/Skin_141.png">
+          <img src="images/skins/Skin_142.png">
+          <img src="images/skins/Skin_143.png">
+          <img src="images/skins/Skin_144.png">
+          <img src="images/skins/Skin_145.png">
+          <img src="images/skins/Skin_146.png">
+          <img src="images/skins/Skin_147.png">
+          <img src="images/skins/Skin_148.png">
+          <img src="images/skins/Skin_150.png">
+          <img src="images/skins/Skin_151.png">
+          <img src="images/skins/Skin_152.png">
+          <img src="images/skins/Skin_153.png">
+          <img src="images/skins/Skin_154.png">
+          <img src="images/skins/Skin_155.png">
+          <img src="images/skins/Skin_156.png">
+          <img src="images/skins/Skin_157.png">
+          <img src="images/skins/Skin_158.png">
+          <img src="images/skins/Skin_159.png">
+          <img src="images/skins/Skin_160.png">
+          <img src="images/skins/Skin_161.png">
+          <img src="images/skins/Skin_162.png">
+          <img src="images/skins/Skin_163.png">
+          <img src="images/skins/Skin_164.png">
+          <img src="images/skins/Skin_165.png">
+          <img src="images/skins/Skin_166.png">
+          <img src="images/skins/Skin_167.png">
+          <img src="images/skins/Skin_168.png">
+          <img src="images/skins/Skin_169.png">
+          <img src="images/skins/Skin_170.png">
+          <img src="images/skins/Skin_171.png">
+          <img src="images/skins/Skin_172.png">
+          <img src="images/skins/Skin_173.png">
+          <img src="images/skins/Skin_174.png">
+          <img src="images/skins/Skin_175.png">
+          <img src="images/skins/Skin_176.png">
+          <img src="images/skins/Skin_177.png">
+          <img src="images/skins/Skin_178.png">
+          <img src="images/skins/Skin_179.png">
+          <img src="images/skins/Skin_180.png">
+          <img src="images/skins/Skin_181.png">
+          <img src="images/skins/Skin_182.png">
+          <img src="images/skins/Skin_183.png">
+          <img src="images/skins/Skin_184.png">
+          <img src="images/skins/Skin_185.png">
+          <img src="images/skins/Skin_186.png">
+          <img src="images/skins/Skin_187.png">
+          <img src="images/skins/Skin_188.png">
+          <img src="images/skins/Skin_189.png">
+          <img src="images/skins/Skin_190.png">
+          <img src="images/skins/Skin_191.png">
+          <img src="images/skins/Skin_192.png">
+          <img src="images/skins/Skin_193.png">
+          <img src="images/skins/Skin_194.png">
+          <img src="images/skins/Skin_195.png">
+          <img src="images/skins/Skin_196.png">
+          <img src="images/skins/Skin_197.png">
+          <img src="images/skins/Skin_198.png">
+          <img src="images/skins/Skin_199.png">
+          <img src="images/skins/Skin_200.png">
+          <img src="images/skins/Skin_201.png">
+          <img src="images/skins/Skin_202.png">
+          <img src="images/skins/Skin_203.png">
+          <img src="images/skins/Skin_204.png">
+          <img src="images/skins/Skin_205.png">
+          <img src="images/skins/Skin_206.png">
+          <img src="images/skins/Skin_207.png">
+          <img src="images/skins/Skin_208.png">
+          <img src="images/skins/Skin_209.png">
+          <img src="images/skins/Skin_210.png">
+          <img src="images/skins/Skin_211.png">
+          <img src="images/skins/Skin_212.png">
+          <img src="images/skins/Skin_213.png">
+          <img src="images/skins/Skin_214.png">
+          <img src="images/skins/Skin_215.png">
+          <img src="images/skins/Skin_216.png">
+          <img src="images/skins/Skin_217.png">
+          <img src="images/skins/Skin_218.png">
+          <img src="images/skins/Skin_219.png">
+          <img src="images/skins/Skin_220.png">
+          <img src="images/skins/Skin_221.png">
+          <img src="images/skins/Skin_222.png">
+          <img src="images/skins/Skin_223.png">
+          <img src="images/skins/Skin_224.png">
+          <img src="images/skins/Skin_225.png">
+          <img src="images/skins/Skin_226.png">
+          <img src="images/skins/Skin_227.png">
+          <img src="images/skins/Skin_228.png">
+          <img src="images/skins/Skin_229.png">
+          <img src="images/skins/Skin_230.png">
+          <img src="images/skins/Skin_231.png">
+          <img src="images/skins/Skin_232.png">
+          <img src="images/skins/Skin_233.png">
+          <img src="images/skins/Skin_234.png">
+          <img src="images/skins/Skin_235.png">
+          <img src="images/skins/Skin_236.png">
+          <img src="images/skins/Skin_237.png">
+          <img src="images/skins/Skin_238.png">
+          <img src="images/skins/Skin_239.png">
+          <img src="images/skins/Skin_240.png">
+          <img src="images/skins/Skin_241.png">
+          <img src="images/skins/Skin_242.png">
+          <img src="images/skins/Skin_243.png">
+          <img src="images/skins/Skin_244.png">
+          <img src="images/skins/Skin_245.png">
+          <img src="images/skins/Skin_246.png">
+          <img src="images/skins/Skin_247.png">
+          <img src="images/skins/Skin_248.png">
+          <img src="images/skins/Skin_250.png">
+          <img src="images/skins/Skin_251.png">
+          <img src="images/skins/Skin_252.png">
+          <img src="images/skins/Skin_253.png">
+          <img src="images/skins/Skin_254.png">
+          <img src="images/skins/Skin_255.png">
+          <img src="images/skins/Skin_256.png">
+          <img src="images/skins/Skin_257.png">
+          <img src="images/skins/Skin_258.png">
+          <img src="images/skins/Skin_259.png">
+          <img src="images/skins/Skin_260.png">
+          <img src="images/skins/Skin_261.png">
+          <img src="images/skins/Skin_262.png">
+          <img src="images/skins/Skin_263.png">
+          <img src="images/skins/Skin_264.png">
+          <img src="images/skins/Skin_265.png">
+          <img src="images/skins/Skin_266.png">
+          <img src="images/skins/Skin_267.png">
+          <img src="images/skins/Skin_268.png">
+          <img src="images/skins/Skin_269.png">
+          <img src="images/skins/Skin_270.png">
+          <img src="images/skins/Skin_271.png">
+          <img src="images/skins/Skin_272.png">
+          <img src="images/skins/Skin_273.png">
+          <img src="images/skins/Skin_274.png">
+          <img src="images/skins/Skin_275.png">
+          <img src="images/skins/Skin_276.png">
+          <img src="images/skins/Skin_277.png">
+          <img src="images/skins/Skin_278.png">
+          <img src="images/skins/Skin_279.png">
+          <img src="images/skins/Skin_280.png">
+          <img src="images/skins/Skin_281.png">
+          <img src="images/skins/Skin_282.png">
+          <img src="images/skins/Skin_283.png">
+          <img src="images/skins/Skin_284.png">
+          <img src="images/skins/Skin_285.png">
+          <img src="images/skins/Skin_286.png">
+          <img src="images/skins/Skin_287.png">
+          <img src="images/skins/Skin_288.png">
+          <img src="images/skins/Skin_289.png">
+          <img src="images/skins/Skin_290.png">
+          <img src="images/skins/Skin_291.png">
+          <img src="images/skins/Skin_292.png">
+          <img src="images/skins/Skin_293.png">
+          <img src="images/skins/Skin_294.png">
+          <img src="images/skins/Skin_295.png">
+          <img src="images/skins/Skin_296.png">
+          <img src="images/skins/Skin_297.png">
+          <img src="images/skins/Skin_298.png">
+          <img src="images/skins/Skin_299.png">
+          <img src="images/skins/Skin_300.png">
+          <img src="images/skins/Skin_301.png">
+          <img src="images/skins/Skin_302.png">
+          <img src="images/skins/Skin_303.png">
+          <img src="images/skins/Skin_304.png">
+          <img src="images/skins/Skin_305.png">
+          <img src="images/skins/Skin_306.png">
+          <img src="images/skins/Skin_307.png">
+          <img src="images/skins/Skin_308.png">
+          <img src="images/skins/Skin_309.png">
+          <img src="images/skins/Skin_310.png">
+          <img src="images/skins/Skin_311.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="gaminglogo">R</h1>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="takiple">BİZİ TAKİP EDİN!</h3>
+          <div class="inline">
+            <a href="#" class="facebook">f</a>
+            <a href="#" class="twitter">t</a>
+            <a href="#" class="youtube">y</a>
+          </div>
+          <a href="mailto:info@rennierpg.com">info@rennierpg.com</a>
+        </div>
+        <div class="col-sm-3 col-padding">
+          <h5 class="yesil">Site Navigasyonu</h5>
+          <ul class="footerListe">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Panel</a></li>
+            <li><a href="#">Geliştirici Notları</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-padding">
+          <h5 class="yesil">Kullanım ve Kurallar</h5>
+          <ul class="footerListe">
+            <li><a href="#">Biz Kimiz?</a></li>
+            <li><a href="#">Oyun Kuralları</a></li>
+            <li><a href="#">Forum Kuralları</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+          </ul>
+          <p class="white copyright textRight">© 2017 rennie gaming<br>
+            Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

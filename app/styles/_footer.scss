@@ -1,0 +1,103 @@
+@import "colors.scss";
+.footer{
+  background: $main-color;
+}
+.gaminglogo{
+  text-indent: -9999px;
+  background-image: url(../images/gaminglogo.svg);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.takiple{
+  color:$gray;
+  font-size: 20px;
+}
+.inline{
+  margin: 10px 0;
+  >.facebook{
+    margin: 0 2px;
+    display:inline-block;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    & svg{
+      transition: all 300ms ease-in-out;
+      fill: #545353;
+      &:hover{
+        transform: scale(1.1);
+        fill: #3C5999;
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+  >.twitter{
+    margin: 0 2px;
+    display:inline-block;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    & svg{
+      transition: all 300ms ease-in-out;
+      fill: #545353;
+      &:hover{
+        transform: scale(1.1);
+        fill: #1da1f2;
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+  >.youtube{
+    margin: 0 2px;
+    display:inline-block;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    & svg{
+      transition: all 300ms ease-in-out;
+      fill: #545353;
+      &:hover{
+        transform: scale(1.1);
+        fill: #cd201f;
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+}
+.col-padding{
+  padding-top: 15px;
+}
+.footerListe{
+  list-style: none;
+}
+.copyright{
+  font-size:12px;
+  font-weight: 300;
+}
+@media (max-width:780px){
+  .footer{
+    display:flex;
+  }
+}
+// @media(min-width: 1650px) and (max-width: 1900px){
+//   .rLefty{
+//     height: 75vh;
+//   }
+//   .footer{
+//     position: absolute;
+//     bottom: 0;
+//     left:0;
+//     width: 100%
+//   }
+// }
+// @media (min-width:2000px){
+//   .rLefty{
+//     height: 75vh;
+//   }
+//   .footer{
+//     position: absolute;
+//     bottom: 0;
+//     left:0;
+//     width: 100%;
+//   }
+// }

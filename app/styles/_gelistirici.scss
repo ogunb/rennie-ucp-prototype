@@ -1,0 +1,76 @@
+@import "colors.scss";
+.col-sm-6 h1.contenthead{
+  font-size: 60px;
+  margin-left: -20px;
+  // display: inline-block;
+  margin-right: -350px;
+}
+.noMargin{
+    margin:5px 0 15px 0;
+}
+.col-sm-7 h2.contentheadSmaller{
+  font-size:25px;
+  font-style: italic;
+  text-align: left;
+}
+.gelistiriciParagraf{
+  padding: 10px 50px;
+}
+.tags{
+  text-align: right;
+  font-size: 12px;
+  font-style: italic
+}
+.row .col-sm-offset-2{
+  margin-top:10px;
+  margin-bottom: 20px;
+  text-align: center;
+  >button{
+    width: 100%;
+  }
+}
+.notlar-link{
+  font-size:12px;
+  background-image: url(http://www.fillmurray.com/850/150.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 2px;
+  padding: 5px;
+  display:inline-block;
+  width: 115px;
+  height: 100px;
+  position: relative;
+  color:$white !important;
+      overflow:hidden;
+  &:hover .not-basligi{
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+  }
+  >.not-basligi{
+    position: absolute;
+    background: fade-out($secondary-color, 0.5);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(100%) scale(0.3);
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+  }
+  >.not-basligi p{
+    padding:1px;
+    text-align: left;
+  }
+}
+@media (max-width:780px) {
+  .col-sm-6 h1.contenthead{
+    margin:0;
+  }
+  .notlar-link .not-basligi{
+      opacity: 1;
+      transform: translateY(0%) scale(1);
+  }
+}

@@ -1,0 +1,34 @@
+@import "colors.scss";
+
+.basvuruGrayBox .form-control{
+  width: auto;
+  height:30px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: box-shadow 250ms ease-in-out;
+  background: $white;
+}
+.basvuru{
+  margin: 20px 0;
+  padding: 0 30px;
+}
+.container-fluid{
+  padding:0;
+}
+.basvuruGrayBox{
+  background: $gray;
+  color: $white !important;
+}
+.basvuruBtn{
+  margin-top:30px;
+  width: 30%;
+  float:right;
+}
+@media(max-width:780px){
+    .basvuruBtn{
+    margin-bottom:20px;
+    margin-top: 20px;
+    display:block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,178 @@
+@import "colors.scss";
+
+.topBar {
+  padding: 20px 0 0 0;
+  background: $main-color;
+}
+.topBarKarakter {
+  margin-left: 5%;
+  padding-bottom: 10px;
+}
+.topBarPadding {
+  padding: 25px 0 0 0;
+}
+.R-logo {
+  padding-top: 25px;
+  background-image: url(../images/r-logo.svg);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 80px;
+  height: 100px;
+  margin: 0;
+}
+
+.TopGiris {
+  color: $white;
+  background: transparent;
+  border: 0;
+  border-bottom: 4px solid $secondary-color;
+  border-radius: 0;
+  height: 40px;
+  box-shadow: 0 0 0 0;
+  font-size: 14px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  &::-webkit-input-placeholder {
+    transition: all 300ms ease-in-out;
+  }
+  &:focus {
+    border: 0;
+    border-bottom: 4px solid $thePink;
+    box-shadow: 0 0 0 0;
+    transition: all 300ms ease-in-out;
+  }
+  &:focus::-webkit-input-placeholder {
+    font-size: 0;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.RennieButton {
+  background: $secondary-color;
+  border: 0px;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  color: $white;
+  transition: all 300ms ease-in-out;
+  margin-bottom: 5px;
+  &:hover,
+  &:focus {
+    background: $thePink;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
+      0 1px 10px desaturate(darken($thePink, 20), 20);
+    color: $white;
+    outline: none;
+  }
+  &:active {
+    background: $thePink !important;
+    color: $white !important;
+  }
+}
+.RennieButtonÜye {
+  background: $thePink;
+  border: 0px;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  color: $white;
+  transition: all 300ms ease-in-out;
+  margin-bottom: 5px;
+  &:hover,
+  &:focus {
+    background: $secondary-color;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
+      0 1px 10px desaturate(darken($secondary-color, 20), 20);
+    color: $white;
+  }
+  &:active {
+    background: $thePink !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
+      0 4px 8px desaturate(darken($thePink, 20), 20);
+    color: $white !important;
+  }
+}
+.rBtn {
+  width: 225px;
+  margin: 2px;
+}
+.rNavigasyon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  & li {
+    a {
+      padding-bottom: 0;
+      font-size: 15px;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $white;
+      }
+    }
+    > a:after {
+      display: block;
+      content: "";
+      border-bottom: solid 4px $secondary-color;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    > a:hover:after,
+    a:active:after,
+    a:focus:after {
+      color: $white;
+      transform: scaleX(1.3);
+    }
+  }
+}
+.karaktersizSkin {
+  filter: brightness(50%) grayscale(100%);
+}
+.hesap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .R-logo,
+  .topBarKarakter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .rNavigasyon {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+.rNavigasyon li a {
+  transition: all 150ms ease-in-out;
+  background: none !important;
+}
+.active {
+  color: $white;
+  > a {
+    color: $white !important;
+    &:after {
+      transform: scaleX(1.3) !important;
+    }
+  }
+}
+li.active a {
+  transition: none !important;
+  &:hover,
+  &:active,
+  &:focus {
+    transition: none !important;
+    border-bottom: none;
+  }
+}

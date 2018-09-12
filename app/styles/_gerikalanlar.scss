@@ -1,0 +1,500 @@
+@import "colors.scss";
+
+body{
+  background: $white;
+}
+.daha-sonra{
+  display:block;
+  text-align: center;
+  font-size: 150px;
+  color:$secondary-color;
+  margin-top:40px;
+  margin-bottom: 30%;
+}
+.textCenter{
+  text-align: center;
+}
+.textRight{
+  text-align: right;
+}
+.floatRight{
+  margin-left: auto;
+}
+.centerThisShit{
+  margin-left: auto;
+  margin-right: auto;
+}
+.row-eq-height {
+  display:         flex;
+}
+
+.theDarkBox img{
+  margin: 0 0 20px 0;
+}
+.theDarkBox{
+  background: $main-color;
+  text-align: center;
+  margin: 40px 0 50px 0;
+  margin-left: 8%;
+  padding: 15px;
+  padding-top: 5%;
+  width: 300px;
+  height: 400px;
+  border:1px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.pMargin{
+  margin: 10px 0 25px 0;
+  padding: 0 20px;
+}
+.leftMargin{
+  margin: 5px 0 0 10px;
+}
+.contenthead{
+  margin:10px 0;
+  font-size: 45px;
+  color: #282828;
+  padding: 10px;
+  border: 0;
+  border-bottom: 4px;
+  border-style: solid;
+  border-color: $secondary-color;
+}
+.smaller{
+  font-size: 40px;
+}
+.divshadow{
+  margin: 30px auto 50px auto;
+  padding: 10px 50px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.glyphPadding{
+  padding-top: 100px;
+  padding-left: 10px;
+  font-size:1.8em;
+}
+.imgPadding{
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.imgBigger{
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-left: -20px;
+}
+.glyphResponsive{
+  display:none;
+}
+.gpsOff{
+  display:none !important;
+}
+.ayirac{
+  display:block;
+  height: 250px;
+  width: 2px;
+  background: $secondary-color;
+  margin:120px 0 0 0;
+}
+.rLefty{
+  background: $secondary-color;
+  margin-right: 50px;
+  >.left-nav{
+    list-style: none;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    line-height: 45px;
+    & a{
+      color: $white;
+    }
+    & a:hover{
+      color: $main-color;
+    }
+    >li input{
+      width: 140%;
+      margin-left: -30px;
+    }
+  }
+}
+.nav-toggle{
+  margin-top: 10px;
+  font-size: 40px;
+  display:none;
+  color: $secondary-color;
+}
+.modal-dialog{
+  padding-top:100px;
+}
+.karakteriSil{
+  background: $dark;
+  >div{
+    color: $white;
+  }
+  .RennieButton{
+    margin: 10px 0;
+  }
+}
+.karakteriSilFooter{
+  text-align: center;
+}
+div.yeniSkin{
+  margin-top:45px;
+}
+input.yeniSkin{
+  width: 170px;
+  display:inline-block;
+}
+.imgMargin{
+  margin: 20px 0 0 0;
+}
+.olusumDuyurular a{
+  color:$thePink;
+  &:hover{
+    color: $dark;
+  }
+}
+.duyuruEkle{
+  margin-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  & + .col-sm-offset-10{
+    margin-bottom: 10px;
+    text-align: right;
+  }
+}
+.duyurularDiv{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.olusumUyeler{
+  margin-bottom: 75px;
+  padding:15px;
+}
+.olusumBoxes{
+  background: $main-color;
+  padding: 20px;
+  margin:10px;
+  box-shadow: 2px -1px 7px rgba(0,0,0,0.2);
+  border: 1px;
+  border-radius: 4px;
+  >ol{
+    color:$white;
+    >li .glyphicon{
+        font-size:15px;
+        margin: 0 8px;
+        float:right;
+      }
+    }
+  >h3{
+    margin:0;
+  }
+}
+.olusumisim{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 250ms ease-in-out;
+  background: transparent;
+  border-color: $secondary-color;
+  color:$main-color;
+  &:focus{
+    border: 1px solid $secondary-color;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(53, 190, 156, 0.75);
+  }
+}
+p.olusumisim{
+  text-align: center;
+  font-weight: 700;
+  font-size:16px;
+}
+.rTextArea{
+    color:$main-color;
+    margin-bottom:10px;
+    transition: box-shadow 250ms ease-in-out;
+    &:focus{
+      border: 1px solid $thePink;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(242, 91, 145, 0.75);
+    }
+}
+
+.col-sm-9 .yeniSkin{
+  margin-right: 20px;
+}
+.bildirimlerimDiv{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;;
+  width: 100%;
+  background: $main-color;
+  margin: 10px;
+  padding:6px;
+  color:$white;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border: 1px;
+  border-radius: 2px;
+  button{
+    height: 35px;
+    width: 100px;
+    float: right;
+  }
+  p{
+    margin: 7px;
+  }
+}
+.bildirimFooterMargin{
+  margin-bottom:300px;
+}
+.bilTextArea{
+    color:$main-color;
+    margin-bottom:10px;
+    background: transparent;
+    transition: box-shadow 250ms ease-in-out;
+    &:focus{
+      border: 1px solid $secondary-color;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(53, 190, 156, 0.75);
+    }
+}
+.ssyukle::-webkit-file-upload-button{
+  visibility: hidden;
+}
+.ssyukle::before {
+  content: 'Dosya Ekle';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin-bottom:10px;
+}
+.ssyukle:hover::before {
+  border-color: $thePink;
+}
+.ssyukle:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.mainColorDivBottom{
+  border-radius: 0 0 10px 10px !important;
+  padding: 20px 20px !important;
+  margin-top: 0 !important;
+}
+.mainColorDivTop, .mainColorDivBottom{
+  background: $main-color;
+  border: 1px;
+  border-radius: 10px 10px 0 0;
+  padding: 0 3px;
+  margin-top: 20px;
+  & h3{
+    color:$white;
+    margin: 10px 0 10px 30px;
+  }
+}
+.bildirimContent{
+  background: $dark;
+  color:$white;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 35px;
+  box-shadow: 0px 9px 20px 4px rgba(0,0,0,0.2);
+}
+.bildirimiKapat{
+  margin: 20px auto;
+  text-align: center;
+}
+.contentheadSmaller{
+  font-size: 30px;
+  color: $dark;
+  border: 0;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: $thePink;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.yorumYonetici, .yorumKullanıcı{
+  background: $gray;
+  border-radius: 10px 10px 10px 0;
+  padding: 20px;
+  margin-left: auto;
+  text-align: left;
+}
+.yorumKullanıcı{
+  border-radius: 10px 10px 0 10px !important;
+}
+a.glyphicon-info-sign{
+  font-size:20px;
+  text-align: right;
+}
+.input-holder{
+  position: relative;
+  margin-top: 10px;
+  float:right;
+  width: 100%;
+  >.glyphicon-search{
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    right:0;
+    color:$thePink;
+  }
+  .bilTextArea{
+    padding-right: 30px;
+    width: 130px;
+    float:right;
+    transition: all 450ms ease-in-out;
+    &:focus{
+      width: 100%;
+    }
+  }
+}
+.modal-header{
+  border-bottom: 1px solid rgba(53, 190, 156, 0.15)!important;
+}
+.modal-footer{
+  border-top: 1px solid rgba(53, 190, 156, 0.15)!important;
+}
+ol{
+  list-style: none;
+}
+.karakterduzenle div.divshadow{
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  	border-radius: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+  	border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+  	border-radius: 3px;
+  }
+}
+@media(max-width:780px){
+  .daha-sonra{
+    font-size: 70px;
+  }
+  ol{
+    list-style:decimal;
+  }
+  .divshadow{
+    padding:5px;
+    margin:10px !important;
+  }
+  .glyphPadding{
+    display:none;
+  }
+  .glyphResponsive{
+    display:block;
+    text-align: center;
+    >a{
+      font-size:23px;
+      color: $secondary-color;
+      margin:0 100px;
+    }
+  }
+  .row-eq-height{
+  display:block;
+  }
+  .theDarkBox{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    text-align: center;
+  }
+  .basvuruGrayBox{
+    background: none !important;
+  }
+  .imgBigger{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  }
+  .ayirac{
+    display:none;
+  }
+  .rLefty{
+    background: none;
+    transform: translateX(-120%);
+    transition: all 300ms ease-in-out;
+    >.left-nav{
+      transition: all 300ms ease-in-out;
+      text-align: left;
+      margin:0;
+      & a{
+        color:$dark;
+      }
+      >li input{
+        width: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  .row{
+    margin: 0;
+  }
+  .acilsusamacil{
+    transform: translateX(0);
+    transform: translateY(0) !important;
+    display:block;
+  }
+  .nav-toggle{
+    display:block;
+  }
+  .bildirimlerimDiv{
+    display:block;
+  }
+  .kapansusam{
+    margin: auto !important;
+    transform: translateY(-20%);
+    transition: all 300ms ease-in-out;
+    &.karakterduzenle{
+      transform:translateY(-5%);
+    }
+    &.bildirimgoruntule{
+      transform: translateY(-7%);
+    }
+    &.olusumUyeler{
+      transform: translateY(-20%);
+    }
+    &.yonetim-anasayfa{
+      transform:translateY(-50%);
+      margin-bottom: 0;
+      >div{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.dropdown-menu
+{
+  background-color:#32313f
+}
+.dropdown-menu li a
+{
+  color:#a3a9bc
+}
+li.dropdown:hover
+{
+  background-color:#35be9c;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color:#35be9c;
+}
+#uye-ol .modal-dialog{
+  padding: 0;
+}
